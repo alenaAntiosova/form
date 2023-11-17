@@ -175,7 +175,8 @@ textarea {
  */
 
 button,
-input { /* 1 */
+input {
+  /* 1 */
   overflow: visible;
 }
 
@@ -185,7 +186,8 @@ input { /* 1 */
  */
 
 button,
-select { /* 1 */
+select {
+  /* 1 */
   text-transform: none;
 }
 
@@ -360,10 +362,8 @@ html {
 }
 
 .container {
-  max-width: 1500px;
   min-width: 320px;
   margin: 0 auto;
-  /* padding: 0px 40px 0px; */
 }
 
 body {
@@ -424,14 +424,14 @@ img {
 
 .form {
   position: absolute;
-  bottom: 10vh;
+  bottom: 30vh;
   max-width: 400px;
   left: 50vw;
   display: flex;
   align-items: center;
   justify-content: space-around;
   gap: 20px;
-  transform: translate(-50%, -10%);
+  transform: translate(-50%, -30%);
 }
 @media (max-width: 720px) {
   .form {
@@ -488,7 +488,8 @@ input:active {
   transition-timing-function: ease;
   border: 3px double;
 }
-.form__button:hover, .form__button:focus {
+.form__button:hover,
+.form__button:focus {
   filter: drop-shadow(0 0 5px white);
 }
 .form__button:active {
