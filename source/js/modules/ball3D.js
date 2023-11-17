@@ -5,7 +5,6 @@ export default () => {
   const scene = new THREE.Scene();
   const geometry = new THREE.TorusKnotGeometry(3, 1, 20, 8);
   const material = new THREE.MeshStandardMaterial({
-    // color: `#7df9ff`
     color: ` #d5d5d5`,
     roughness: 0.2
   });
