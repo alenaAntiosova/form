@@ -1,0 +1,87 @@
+.canvas-block {
+  position: relative;
+}
+
+.form__wrapper {
+  position: relative;
+}
+
+.form {
+  position: absolute;
+  bottom: 10vh;
+  max-width: 400px;
+  left: 50vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+  transform: translate(-50%, -10%);
+
+  @media (max-width: 720px) {
+    width: 100%;
+  }
+
+  @media (max-width: 450px) {
+    padding: 0px 10px 0px 10px;
+  }
+}
+
+input {
+  position: relative;
+  width: 100%;
+  padding: 12px 20px;
+  background: transparent;
+  border: 2px solid #ffff;
+  border-radius: 40px;
+  font-size: 14px;
+  outline: none;
+  box-shadow: none;
+  color: $mainColor;
+
+  &:active {
+    color: transparent;
+  }
+
+  @media (max-width: 500px) {
+    font-size: 8px;
+    padding: 8px 16px;
+    width: 90%;
+  }
+  @media (max-width: 450px) {
+    width: 40%;
+  }
+}
+
+.form__input-button {
+  background-color: $mainColor;
+  cursor: pointer;
+}
+
+.form__button {
+  background-color: $bottonColor;
+  color: $mainColor;
+  padding: 10px 20px;
+  width: 100%;
+  border-radius: 40px;
+  font-size: 14px;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  border: 3px double;
+
+  &:hover,
+  &:focus {
+    filter: drop-shadow(0 0 5px white);
+  }
+
+  &:active {
+    background-color: $mainColor;
+    color: $hoverColor;
+    font-weight: 600;
+    transition: background-color 0.5s ease-in;
+  }
+
+  @media (max-width: 500px) {
+    width: auto;
+    font-size: 10px;
+  }
+}
