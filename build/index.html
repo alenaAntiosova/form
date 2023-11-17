@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Form</title>
+<link href="css/style.min.css" rel="stylesheet"></head>
+
+<body>
+   <main>
+      <div class="container">
+         <div class="canvas-block">
+            <canvas class="webgl"></canvas>
+         </div>
+         <div class="form__wrapper">
+            <form class="form" action="#" method="post" id="authForm">
+               <input class="form__input" type="email" name="name" id="email-user" placeholder="Логин" required="">
+               <input class="form__input" type="password" name="pass" id="pass-user" placeholder="Пароль" required="" autocomplete="current-password">
+               <button class="form__button" type="submit" value="отправить">
+                  Отправить
+               </button>
+            </form>
+         </div>
+      </div>
+   </main>
+<script src="js/script.js"></script></body>
+
+</html>
